@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "name": "测试async track",
+            "program": "${workspaceFolder}/async-auto-track/src/index.js",
+            "request": "launch",
+            "type": "node"
+        }
+    ]
+}
