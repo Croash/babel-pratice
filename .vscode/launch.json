@@ -5,6 +5,12 @@
             "program": "${workspaceFolder}/async-auto-track/src/index.js",
             "request": "launch",
             "type": "node"
+        },
+        {
+            "name": "测试condition delete plugin",
+            "program": "${workspaceFolder}/condition-expression-delete/src/index.js",
+            "request": "launch",
+            "type": "node"
         }
     ]
 }
