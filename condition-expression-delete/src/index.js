@@ -14,9 +14,10 @@ const ast = parser.parse(sourceCode, {
 
 const { code } = transformFromAstSync(ast, sourceCode, {
     plugins: [[customedPlugin, {
+        pendingName: 'condition'
         // trackerPath: 'tracker'
     }]]
 });
 
-console.log(code);
+console.log('code:',code);
 
