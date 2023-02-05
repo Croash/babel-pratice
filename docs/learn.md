@@ -1,0 +1,1 @@
+可以以astexplorer的ast为准，同时babel的traverse完全是以path为准的。无论是replace还是node或者是其他，找不到方法，就看文档，之后在path上做尝试。
