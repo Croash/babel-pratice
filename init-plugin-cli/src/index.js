@@ -43,12 +43,17 @@ function exportFile() {
   const sourceCode = fs.readFileSync(path.join(__dirname, './template/sourceCode.js'), {
     encoding: 'utf-8'
   })
+  const gitIgnore = fs.readFileSync(path.join(__dirname, './template/.gitignore'), {
+    encoding: 'utf-8'
+  })
+
   const buildPacakgeJson = require('./template/buildPacakgeJson')
   fs.writeFile(path.resolve(cwd,`./${name}/src/index.js`), indexJs, {}, () => {}
   )
   fs.writeFile(path.resolve(cwd, `./${name}/src/plugin.js`), pluginJs, {}, () => {})
   fs.writeFile(path.resolve(cwd, `./${name}/src/sourceCode.js`), sourceCode, {}, () => {})
   fs.writeFile(path.resolve(cwd, `./${name}/package.json`), JSON.stringify(buildPacakgeJson({name}), null, 2),  {}, () => {})
+  fs.writeFile(path.resolve(cwd, `./${name}/.gitignore`), gitIgnore, {}, () => {})
 }
 
 mkdir()
