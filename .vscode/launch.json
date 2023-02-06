@@ -11,6 +11,18 @@
             "program": "${workspaceFolder}/condition-expression-delete/src/index.js",
             "request": "launch",
             "type": "node"
+        },
+        {
+            "name": "测试 init plugin cli",
+            "program": "${workspaceFolder}/cli-init-plugin/src/index.js",
+            "request": "launch",
+            "type": "node",
+            "args": [
+                "./input/*.js",
+                "--out-dir", "./dist",
+                "--name", "customedPlugin",
+            ],//命令行参数
+            "cwd": "${workspaceFolder}/cli-init-plugin/test"//运行的目录
         }
     ]
 }

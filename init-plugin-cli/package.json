@@ -1,0 +1,15 @@
+{
+  "name": "init-plugin-cli",
+  "version": "1.0.0",
+  "description": "a tool to init plugin",
+  "main": "./src/index.js",
+  "bin": {
+    "init-plugin": "./src/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {}
+}
