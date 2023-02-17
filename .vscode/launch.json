@@ -13,6 +13,12 @@
             "type": "node"
         },
         {
+            "name": "测试check-todo-plugin",
+            "program": "${workspaceFolder}/check-todo-plugin/src/index.js",
+            "request": "launch",
+            "type": "node"
+        },
+        {
             "name": "测试 init plugin cli",
             "program": "${workspaceFolder}/cli-init-plugin/src/index.js",
             "request": "launch",

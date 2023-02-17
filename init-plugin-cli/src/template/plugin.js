@@ -8,11 +8,10 @@ const customedPlugin = declare((api, options, dirname) => {
       file.set('state', []);
     },
     visitor: {
-
       Program: {
         enter(path, state) {},
-        'VariableDeclaration|ReturnStatement'(path, state) {},
-      }
+      },
+      'VariableDeclaration|ReturnStatement'(path, state) {},
     }
   }
 })
